@@ -64,7 +64,7 @@ void midSplit(uint8_t wait, int tailLength, int tailOffset, int sideDelay) {
         stripA.setPixelColor(sideDelay+tailLength*2+(ledLength-tailLength)-i, 0);    //turn every x pixel off
         stripB.setPixelColor(i-tailLength, 0);    //turn every x pixel off
         stripC.setPixelColor(i-tailLength, 0);    //turn every x pixel off
-        stripD.setPixelColor(sideDelay+tailLength*2+(ledLength-tailLength)-i, 0);    //turn every x pixel off
+        stripD.setPixelColor(sideDelay+tailLength*2+(ledLength-tailLength)-i, 0);   
         stripA.show();
         stripB.show();
         stripC.show();
@@ -93,9 +93,9 @@ void theaterChase(uint8_t wait) {
      
       for (int i=0; i < ledLength+20; i=i+10) {
         stripA.setPixelColor(i+q, 0);    //turn every x pixel off
-        stripB.setPixelColor(i+1-q, 0);    //turn every x pixel off
-        stripC.setPixelColor(i+2-q, 0);    //turn every x pixel off
-        stripD.setPixelColor(i+3+q, 0);    //turn every x pixel off
+        stripB.setPixelColor(i+1-q, 0);   
+        stripC.setPixelColor(i+2-q, 0);   
+        stripD.setPixelColor(i+3+q, 0);    
       }
     }
   }
