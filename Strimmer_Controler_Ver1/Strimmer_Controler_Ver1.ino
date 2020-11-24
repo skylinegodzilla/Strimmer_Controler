@@ -32,6 +32,8 @@ void setup() {
     * Having an issue of using Adafruit_Neo objects in an array. 
     * that is why the above part is commented out
     * Still trying to work out why so for now I have to use this in a cringey way :(  
+    *Edit: Turns out that you cant use Adafruit_Neo objects in an array and iliterate 
+    *through them without having it crash on 3rd party bords. So ill have to leave the code this way for node MCU's so sad TnT
    */
   
   stripA.begin();
